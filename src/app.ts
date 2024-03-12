@@ -8,8 +8,6 @@ const createServer = () => {
 
     app.use(createRoutes())
 
-    console.log(process.env)
-
     return app
 }
 
