@@ -1,0 +1,9 @@
+name: Test
+on: [ push]
+jobs:
+  testing:
+    runs-on: node:21.7.1-alpine3.19
+    steps:
+      - run: npm install -g yarn
+      - run: yarn install
+      - run: yarn run test
